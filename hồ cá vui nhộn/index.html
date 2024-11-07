@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> HC</title>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<script src=".js"></script>
+    <style>
+        body {
+            background-image: url('./assets/img/nen1.jpg');
+            background-attachment: fixed; 
+            background-size: cover;
+            background-repeat: no-repeat; 
+            background-position: center; 
+            height: 100vh; 
+            margin: 0; 
+        }
+    </style>
+    <div  class="content">
+	
+        <div id="shark"> <img src="./assets/img/camap-unscreen.gif" width ="320"; height="150"></div>
+        <div id="crab"> <img src="./assets/img/cua-unscreen.gif" width ="60"; height="60"></div>
+        <div id="fish1"> <img src="./assets/img/fish.gif" width ="180"; height="140"></div>
+        <div id="squid"> <img src="./assets/img/squid.gif"; width ="230"; height="200"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        
+    </div>
+    
+
+<audio id="myAudio1">
+<source src="./assets/audio/LaoTamKhoTu-ThanhHungIdol-8783607.mp3" type ="audio/mpeg">
+</audio>
+<button onclick="playAudio1()" type="button">Play Audio 1</button>
+<button onclick="pauseAudio1()" type="button">Pause Audio 1</button> 
+<script>
+  var x = document.getElementById("myAudio1"); 
+  
+  function playAudio1() { 
+    x.play(); 
+  } 
+  
+  function pauseAudio1() { 
+    x.pause(); 
+  } 
+  </script>
+
+<audio id="myAudio2">
+	<source src="./assets/audio/VuaHanVuaYeu-TrungTu-15121915.mp3" type ="audio/mpeg"> 
+	</audio>
+	<button onclick="playAudio2()" type="button">Play Audio 2</button>
+	<button onclick="pauseAudio2()" type="button">Pause Audio 2</button> 
+
+  <script>
+    var y = document.getElementById("myAudio2"); 
+    
+    function playAudio2() { 
+      y.play(); 
+    } 
+    
+    function pauseAudio2() { 
+      y.pause(); 
+    } 
+    </script>
+    
+	
+</body>
+</html>
+    
